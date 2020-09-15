@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/375333_0_0.woff2") format("woff2"), url("../fonts/375333_0_0.woff") format("woff");
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/subset-Avenir-Black.woff2") format("woff2"), url("../fonts/subset-Avenir-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/subset-Avenir-Book.woff2") format("woff2"), url("../fonts/subset-Avenir-Book.woff") format("woff");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/subset-Avenir-Roman.woff2") format("woff2"), url("../fonts/subset-Avenir-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal
+}

@@ -1,0 +1,57 @@
+$main-color: #fff;
+$accent: #99c93c;
+$accent2: #6b9900;
+$accent3: #a4e530;
+$bg: #28292a;
+$grey: #9b9b9b;
+$red: #c90f14;
+$dark-text: #202020;
+$dark-bg: #202020;
+
+$font-std: 'Lato', sans-serif;
+$font-sec: 'BebasNeue', sans-serif;
+
+$xl: 1800px;
+$desktop: 1024px;
+$tablet: 640px;
+$margin: 1.875rem;
+
+@mixin clear-after {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin placeholder($color) {
+  ::-webkit-input-placeholder {
+    opacity: 1;
+    color: $color;
+  }
+  ::-moz-placeholder {
+    opacity: 1;
+    color: $color;
+  }
+  :-ms-input-placeholder {
+    opacity: 1;
+    color: $color;
+  }
+  :-moz-placeholder {
+    opacity: 1;
+    color: $color;
+  }
+}
+
+@mixin container($maxWidth: 1230px, $padding:15px) {
+  max-width:$maxWidth;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:$padding;
+  padding-right:$padding;
+  width: 100%;
+}
+
+.container {
+  @include container();
+}

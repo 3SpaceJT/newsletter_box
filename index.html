@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter box</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <section class="solutions-nlt">
+    <div class="nlt-box">
+      <div class="nlt-box__text">
+        <div>
+          <h2>bądź na bieżąco</h2>
+          <p>Jedyny taki newsletter, w którym dostajesz tylko artykuły dziennikarstwa rozwiązań.</p>
+        </div>
+      </div>
+      <div class="nlt-box__form">
+        <div class="box-form">
+          <div class="box-form__text">
+            <p>Zapisz się do listy</p>
+            <p>Dziennikarstwa Rozwiązań</p>
+          </div>
+          <form class="box-form__form" action="/" accept-charset="utf-8" method="post">
+            <label class="field">
+              <div class="field__label">Imię:</div>
+              <div class="field__field">
+                <input type="text" name="freshmail_custom_field[imie]" class="field__input">
+                <div class="field__placeholder">wpisz imię</div>
+              </div>
+            </label>
+            <label class="field">
+              <div class="field__label">E-mail:</div>
+              <div class="field__field">
+                <input type="email" name="freshmail_email" class="field__input">
+                <div class="field__placeholder">wpisz adres</div>
+              </div>
+            </label>
+            <input type="submit" value="Zapisz się" class="btn i btn--accent btn--100"></form>
+          <div class="box-form__text">
+            <p>Naciskając „Zapisz się”, wyrażam zgodę na przesyłanie newslettera Dziennikarstwa Rozwiązań przez
+              Outriders
+              Sp. not-for-profit Sp. z o.o. i akceptuję <a href="">regulamin</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <script src="js/newsletter.js"></script>
+</body>
+
+</html>

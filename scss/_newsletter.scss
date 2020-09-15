@@ -1,0 +1,103 @@
+.solutions-nlt {
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 516px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 821px;
+  }
+}
+
+.nlt-box {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 490px;
+    background: $accent;
+    box-shadow: -8.7px 5px 40px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: $tablet) {
+      height: 300px;
+    }
+
+    div {
+      padding: 10px 35px;
+
+      @media (max-width: $tablet) {
+        padding: 5px 10px;
+      }
+    }
+
+    h2 {
+      font-family: $font-sec;
+      font-size: 94px;
+      line-height: 100%;
+      text-transform: uppercase;
+      margin: 0px 0px 20px;
+
+      @media (max-width: $tablet) {
+        font-size: 60px;
+      }
+    }
+
+    p {
+      font-family: $font-std;
+      font-size: 16px;
+      line-height: 162%;
+      color: #000000;
+      margin: 0px 0px 20px;
+    }
+
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 490px;
+    background: #393939;
+    box-shadow: -8.7px 5px 40px rgba(0, 0, 0, 0.2);
+  }
+
+}
+
+
+.box-form {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 162%;
+  color: #FFFFFF;
+  padding: 0px 20px;
+
+  @media (max-width: $tablet) {
+    padding: 0px 30px;
+  }
+
+
+  .field {
+    &__input {
+      color: #606060;
+    }
+  }
+}

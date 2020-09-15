@@ -1,0 +1,236 @@
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  transition: 0.2s all;
+  border: 0;
+  color: #000;
+  border-radius: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  position: relative;
+  font-size: 1.4rem;
+
+  &--100 {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  &--accent {
+    background: $accent;
+
+    &:hover {
+      background: $accent2;
+    }
+  }
+
+  &--white {
+    background: #fff;
+
+    &:hover {
+      background: $accent;
+    }
+  }
+
+  &--opacity {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+
+    &:hover {
+
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &--small {
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+  }
+
+
+  &--red-arrow {
+    padding-left: 20px;
+    padding-right: 50px;
+
+    &::before, &::after {
+      content: "";
+      display: block;
+      border-right: 2px solid $red;
+      border-top: 2px solid $red;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: calc(50% - 6px);
+      transform: rotate(45deg);
+      transition: right .3s, opacity .3s;
+    }
+
+    &::before {
+      right: 50px;
+      opacity: 0;
+    }
+
+    &::after {
+      right: 30px;
+    }
+
+    &:hover {
+      &::before {
+        right: 30px;
+        opacity: 1;
+      }
+
+      &::after {
+        right: 10px;
+        opacity: 0;
+      }
+    }
+  }
+
+  &--green-arrow {
+    padding-left: 20px;
+    padding-right: 50px;
+
+    &::before, &::after {
+      content: "";
+      display: block;
+      border-right: 2px solid $accent;
+      border-top: 2px solid $accent;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: calc(50% - 6px);
+      transform: rotate(45deg);
+      transition: right .3s, opacity .3s;
+    }
+
+    &::before {
+      right: 50px;
+      opacity: 0;
+    }
+
+    &::after {
+      right: 30px;
+    }
+
+    &:hover {
+      &::before {
+        right: 30px;
+        opacity: 1;
+      }
+
+      &::after {
+        right: 10px;
+        opacity: 0;
+      }
+    }
+  }
+
+  &--dark-arrow {
+    padding-left: 20px;
+    padding-right: 50px;
+
+    &::before, &::after {
+      content: "";
+      display: block;
+      border-right: 2px solid #000;
+      border-top: 2px solid #000;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: calc(50% - 6px);
+      transform: rotate(45deg);
+      transition: right .3s, opacity .3s;
+    }
+
+    &::before {
+      right: 50px;
+      opacity: 0;
+    }
+
+    &::after {
+      right: 30px;
+    }
+
+    &:hover {
+      color: #000;
+
+      &::before {
+        right: 30px;
+        opacity: 1;
+      }
+
+      &::after {
+        right: 10px;
+        opacity: 0;
+      }
+    }
+  }
+
+  &--download {
+    border: 2px solid #323232;
+    position: relative;
+    padding-left: 70px;
+    padding-right: 50px;
+    color: #fff;
+    svg {
+      position: absolute;
+      left: 30px;
+      top: 12px;
+    }
+
+    &:hover {
+      border: 2px solid $accent;
+    }
+  }
+
+  &--about {
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  &--no-wrap {
+    white-space: nowrap;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 1.6rem;
+    &--green-arrow, &--red-arrow, &--dark-arrow {
+
+      padding-left: 40px;
+      padding-right: 100px;
+    }
+    &--about {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+
+    &--wider {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    &--small {
+      padding: 5px 15px;
+      font-size: 1.4rem;
+    }
+
+  }
+
+}
+
+.text-link {
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  border-bottom: 2px solid $accent;
+  transition: border-color .2s;
+  &:hover {
+    border-bottom-color:#000;
+  }
+
+}
+

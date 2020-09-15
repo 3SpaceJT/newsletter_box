@@ -1,0 +1,50 @@
+.field {
+  display: flex;
+  background: rgba(0,0,0,0.5);
+  border:2px solid #28292a;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 28px;
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 5px;
+
+  &__label {
+    line-height: 52px;
+  }
+
+  &__field {
+    position: relative;
+  }
+
+  &__input {
+    height: 100%;
+    background: transparent;
+    border:0;
+    padding-left: 10px;
+    outline:none;
+  }
+
+  &__placeholder {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    line-height: 52px;
+    color: #606060;
+    transition: transform .2s, opacity .2s;
+    .filled & {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+
+  }
+
+
+  @media (min-width: $desktop) {
+
+  }
+
+}
